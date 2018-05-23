@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+    <style>
+      #auto {
+        width: 170px;
+        position: absolute;
+        display: none;
+        border:1.2px solid #00618B;
+        border-radius: 6px;
+        background-color: #000d16;
+  
+      }
+      .auto_out {
+        cursor: pointer;
+        height: 25px;
+        line-height: 25px;
+        font-size: 0.8rem;
+        padding-left: .5em;
+        color: white;
+        background: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        background-color: #000d16;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="searchinput" type="text" placeholder="请输入姓名" />
+      <div id="auto"></div>
+    </div>
+    
+  </body>
+<script>
+var x=1;
+var bar=function(){
+  console.log(this.x);
+}
+var obj1={x:1};
+var obj2={x:1};
+var obj3={x:1};
+var func=bar.bind(obj1);
+func();
+var func=bar.bind(obj1).bind(obj2);
+func();
+var func=bar.bind(obj1).bind(obj2).bind(obj3);
+func();
+
+</script>
+
+</html>
